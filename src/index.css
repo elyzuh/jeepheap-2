@@ -1,0 +1,90 @@
+.login-page {
+    background-image: url('src/assets/loginbg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.login-container {
+    background-color: #FFFFFF; 
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 3px #1AE1C4, 0 0 15px #1AE1C4;
+    width: 700px;
+    height: 300px;
+    display: flex;
+    color: #1A3D5B;
+}
+
+.login-container-left{
+    border-right: 2px solid #1A3D5B;
+    border-radius: 2px;
+}
+
+.login-container-left img{
+    padding:0px;
+    padding-top: 100px;
+    margin:10px;
+}
+
+.login-container-right{
+    padding:30px;
+    padding-top: 30px;
+}
+
+.login-container-right h3{
+    padding-top: 10px;
+    font-weight:500;
+    padding-bottom: 30px;
+}
+
+.login-container-right input{
+    background-color: #1F1750;
+    color: white;
+    font-size: 17px;
+    border-radius: 15px;
+    border-width: 0px;
+    width:150px;
+    height:20px;
+    padding: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.login-container-right input:focus {
+    box-shadow: 0 0 3px #7B61FF, 0 0 15px #7B61FF;
+    border-width: 0px;
+}
+
+.login-page-button{
+    font-family: 'League Spartan', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background: #1AE1C4;
+    border-radius: 999px;
+    color: #2B2E4A;
+    border-width: 0px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.forgot-password-link{
+    font-weight: bold;
+    text-decoration: none;
+    color: #1AE1C4;
+    font-size: 15px;
+}
+
+.forgot-password-link:hover{
+    text-decoration: underline;
+    color: #2B2E4A;
+}
+  
