@@ -26,7 +26,7 @@ class App extends Component{
 
         <div className='first-p'>
                 <div className='first-left'>
-                    <h1>Your journey, <b>Simplified!</b></h1>
+                    <h1>Your journey, <b>Simplified!  :DDD</b></h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas sed tempus urna et pharetra pharetra massa. Ut eu sem integer vitae justo eget. Senectus et netus et malesuada fames ac turpis. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. </p>
                 </div>
                 <div className='first-right'>
