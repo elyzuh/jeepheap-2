@@ -8,10 +8,14 @@ class App extends Component{
   constructor(){
     super();
     this.loginPage = this.loginPage.bind(this);
+    this.HomePage = this.HomePage.bind(this);
   }
 
   loginPage(){
     this.props.history.push('/LoginPage');
+  }
+  HomePage(){
+    this.props.history.push('/HomePage');
   }
 
   render(){
@@ -20,13 +24,12 @@ class App extends Component{
         <div className='header'>
           <img src={logo} className='logo' alt="Your Logo" /> 
           <br/>
-          <button onClick={this.loginPage} className='login'>Login</button>
-          <button className='signup'>Sign Up</button>
+          <button onClick={this.loginPage} className='login'>Login </button>
         </div>
 
         <div className='first-p'>
                 <div className='first-left'>
-                    <h1>Your journey, <b>Simplified!</b></h1>
+                    <h1>Your journey, <b>Simplified!</b> </h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas sed tempus urna et pharetra pharetra massa. Ut eu sem integer vitae justo eget. Senectus et netus et malesuada fames ac turpis. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. </p>
                 </div>
                 <div className='first-right'>
@@ -60,7 +63,7 @@ class App extends Component{
 
             <div className='third-p'>
                 <div className='third-left'>
-                    <h1>Spend less time on <br></br>paperwork,and more time <br></br>on the road.</h1>
+                    <h1>Less time on the <br></br>paperwork, more time <br></br>on the road.</h1>
                 </div>
             </div>
             <div className='footer'>

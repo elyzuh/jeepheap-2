@@ -1,227 +1,206 @@
 .login-page {
-  background-image: url('src/assets/loginbg.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background-image: url('src/assets/loginbg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+  
 .login-container {
-  background-color: #FFFFFF;
-  padding: 20px;
-  border-radius: 30px;
-  box-shadow: 0 0 3px #1AE1C4, 0 0 15px #1AE1C4;
-  width: 700px;
-  height: 300px;
-  display: flex;
-  color: #1A3D5B;
+    background-color: #FFFFFF; 
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 3px #1AE1C4, 0 0 15px #1AE1C4;
+    width: 700px;
+    height: 300px;
+    display: flex;
+    color: #1A3D5B;
 }
 
-.login-container-left {
-  border-right: 2px solid #1A3D5B;
-  border-radius: 2px;
+.login-container-left{
+    border-right: 2px solid #1A3D5B;
+    border-radius: 2px;
 }
 
-.login-container-left img {
-  padding: 0px;
-  padding-top: 100px;
-  margin: 10px;
+.login-container-left img{
+    padding:0px;
+    padding-top: 100px;
+    margin:10px;
 }
 
-.login-container-right {
-  padding: 30px;
-  padding-top: 30px;
+.login-container-right{
+    padding:30px;
+    padding-top: 30px;
 }
 
-.login-container-right h3 {
-  padding-top: 10px;
-  font-weight: 500;
-  padding-bottom: 30px;
+.login-container-right h3{
+    padding-top: 10px;
+    font-weight:500;
+    padding-bottom: 30px;
 }
 
-.login-container-right input {
-  background-color: #1F1750;
-  color: white;
-  font-size: 17px;
-  border-radius: 15px;
-  border-width: 0px;
-  width: 150px;
-  height: 20px;
-  padding: 5px;
-  margin-top: 10px;
-  transition: background-color 0.3s;
+.login-container-right input{
+    background-color: #E8F0FE;
+    color: white;
+    font-size: 17px;
+    border-radius: 15px;
+    border-width: 0px;
+    width:150px;
+    height:20px;
+    padding: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
 }
 
+.login-container-right input[type='text'] {
+    width:100px;
+}
 .login-container-right input:focus {
-  box-shadow: 0 0 3px #7B61FF, 0 0 15px #7B61FF;
-  border-width: 0px;
+    box-shadow: 0 0 3px #7B61FF, 0 0 15px #7B61FF;
+    border-width: 0px;
 }
 
-.login-page-button {
-  font-family: 'League Spartan', Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 30px;
-  background: #1AE1C4;
-  border-radius: 999px;
-  color: #2B2E4A;
-  border-width: 0px;
-  margin-top: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
+.login-page-button{
+    font-family: 'League Spartan', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background: #1AE1C4;
+    border-radius: 999px;
+    color: #2B2E4A;
+    border-width: 0px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.forgot-password-link {
-  font-weight: bold;
-  text-decoration: none;
-  color: #1AE1C4;
-  font-size: 15px;
+.forgot-password-link{
+    font-weight: bold;
+    text-decoration: none;
+    color: #1AE1C4;
+    font-size: 15px;
 }
 
-.forgot-password-link:hover {
-  text-decoration: underline;
-  color: #2B2E4A;
+.forgot-password-link:hover{
+    text-decoration: underline;
+    color: #2B2E4A;
 }
-
-.parent {
-
-  width: 100%;
-  height: 100%;
-  background-image: url('src/assets/loginbg.png');
-
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  background-color: #7b61ff;
-  padding: 10px;
-}
-
-.clientLogo {
-
-  padding-right: 10px;
-  height: 60px;
-  padding-left: 20px;
-
-}
-
-.coop-name {
-  font-family: 'League Spartan', Arial, Helvetica, sans-serif;
-  background-color: transparent;
-  font-size: x-large;
-
-}
-
-.PageName {
-  position: absolute;
-  top: 4.73%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: transparent;
-  font-size: x-large;
-  font-weight: 600;
-}
-
-
-.userUser {
-  float: right;
-  display: flex;
-  background-color: transparent;
-  margin: auto;
-  margin-right: 8px;
-  padding: 5px;
   
+/* home css */
+.home-page {
+    background-image: url('src/assets/loginbg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
 }
 
-.userDetails {
-  margin: auto;
-  font-size: large;
-  letter-spacing: 2px;
-  font-weight: 500;
-
+.home-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #7B61FF;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2B2E4A;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
 }
 
-.userName {
-  background-color: transparent;
-  padding: 5px;
-
+.home-header a {
+    text-decoration: none;
+    color: #2B2E4A;
+    margin-right: auto; 
+    padding-right: 20px; 
 }
 
-.userRole {
-  background-color: transparent;
-  padding: 5px;
+.home-header h1 {
+    margin-left: auto; 
 }
 
-.userProf {
-  width: fit-content;
-  height: 60px;
-  padding-left: 60px;
-  padding-left: 20px;
-  padding-right: 20px;
-
+.home-container {
+    margin-top: 60px; 
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 3px #1AE1C4, 0 0 15px #1AE1C4;
+    width: 70%;
+    max-width: 1200px;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    color: #1A3D5B;
 }
 
-.outSide {
-  background-color: transparent;
-  width: 100%;
-  height: 100%;
+.home-container-left {
+    border-right: 2px solid #1A3D5B;
+    border-radius: 2px;
 }
 
-
-button {
-  margin: 0;
-  padding: 0;
-  border: none;
-  background: none;
-  font: inherit;
-  cursor: pointer;
-
+.home-container-left img {
+    padding: 0px;
+    padding-top: 100px;
+    margin: 10px;
 }
 
-.buttons {}
-
-.buttons ul {
-
-  padding: 50px;
-  margin-right: 600px;
-
-
+.home-container-right {
+    padding: 30px;
+    padding-top: 30px;
 }
 
-.buttons li {
-  
-  width: 100px;
-  margin: 60px;
-  margin-left: 200px;
-  margin-right: 200px;
-  list-style-type: none;
-  padding: 40px 80px;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  background-color: #2DD7AE;
-  color: #ffffff;
-  border-radius: 18px;
-  border: 2px solid #1F1750;
-  transition: background-color 0.3s ease;
-  font-size: x-large;
-  font-weight: 600;
-
+.home-container-right h3 {
+    padding-top: 10px;
+    font-weight: 500;
+    padding-bottom: 30px;
 }
 
-.buttons li:hover {
-  background: #7b61ff;
-  border: 1px solid #2DD7AE;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 18px;
-  color: #1AE1C4; 
+.home-container-right input {
+    background-color: #E8F0FE;
+    color: white;
+    font-size: 17px;
+    border-radius: 15px;
+    border-width: 0px;
+    width: 150px;
+    height: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
 }
 
+.home-container-right input[type='text'] {
+    width: 100px;
+}
 
+.home-container-right input:focus {
+    box-shadow: 0 0 3px #7B61FF, 0 0 15px #7B61FF;
+    border-width: 0px;
+}
+
+.home-page-button {
+    font-family: 'League Spartan', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background: #1AE1C4;
+    border-radius: 999px;
+    color: #2B2E4A;
+    border-width: 0px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
