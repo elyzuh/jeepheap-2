@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import '../index.css'
+import '/src/index.css'
 import logo from '../assets/logo.png';
 
-class LoginPage extends Component {
+class Login extends Component {
     constructor() {
       super();
       this.state = {
@@ -42,4 +42,4 @@ class LoginPage extends Component {
   }
 
 
-export default LoginPage;
+export default Login;
