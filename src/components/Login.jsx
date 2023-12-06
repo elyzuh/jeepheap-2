@@ -44,6 +44,9 @@ handleLogin = () => {
 
           // Redirect to CMain component
           this.props.history.push('/Cashier/Home');
+          alert('You are authorized.');
+      }else{
+          alert('Login failed. Please check your credentials.');
       }
   })
   .catch((error) => {
