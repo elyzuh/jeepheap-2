@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
+import axios from 'axios'; // Import axios for making HTTP requests
 import '../index.css';
 import dummyCoop from '../assets/dummyCoop.png';
 import profile from '../assets/profile.png';
-
 
 class CMain extends Component {
   constructor() {
@@ -10,46 +11,55 @@ class CMain extends Component {
     this.state = {
       welcome1: "HOME",
       CoopName: "Lorem Transport Coop",
-      dummyName: "John Doe",
+      Name: "John Doe",
       role: "CASHIER"
     };
     this.encodePage = this.encodePage.bind(this);
     this.recordsPage = this.recordsPage.bind(this);
-
   }
 
-
-  encodePage(){
+  encodePage() {
     this.props.history.push('/Cashier/Encode');
   }
 
-  recordsPage(){
+  recordsPage() {
     this.props.history.push('/Cashier/Records');
   }
-  
+
   componentDidMount() {
-    const currentPage = window.location.pathname.toLowerCase();
-    
-    if (currentPage === "/home" || currentPage === "/cmain") {
-      document.getElementById("homeButton").classList.add("selected");
-    } else if (currentPage === "/encode") {
-      document.getElementById("encodeButton").classList.add("selected");
-    } else if (currentPage === "/records") {
-      document.getElementById("recordsButton").classList.add("selected");
-    } else if (currentPage === "/signout") {
-      document.getElementById("signoutButton").classList.add("selected");
+    this.setActiveButton();
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.location.pathname !== prevProps.location.pathname) {
+      this.setActiveButton();
     }
   }
 
-  componentWillUnmount() {
+  setActiveButton() {
+    const currentPage = this.props.location.pathname.toLowerCase();
+    const buttons = ['home', 'encode', 'records', 'signout'];
+
+    buttons.forEach(button => {
+      const buttonElement = document.getElementById(`${button}Button`);
+      if (buttonElement) {
+        if (currentPage.includes(button)) {
+          buttonElement.classList.add('selected');
+        } else {
+          buttonElement.classList.remove('selected');
+        }
+      }
+    });
   }
+  
+
+  componentWillUnmount() {}
 
   render() {
     const backgroundStyle = {
       backgroundImage: `url('/src/assets/Cmainbg.png')`,
     };
 
-    
     return (
       <div className="cmain-page" style={backgroundStyle}>
         <div className="navbar">
@@ -66,7 +76,7 @@ class CMain extends Component {
           <div className="userUser">
             <div className="userDetails">
               <div className="userName">
-                {this.state.dummyName}
+                {this.state.Name}
               </div>
               <div className="userRole">
                 {this.state.role}
@@ -78,18 +88,34 @@ class CMain extends Component {
           </div>
         </div>
         <div className="outSide">
-        <div className="buttons">
-          <ul >
-            <li><button>Home</button></li>
-            <li><button onClick={this.encodePage}>Encode</button></li>
-            <li><button onClick={this.recordsPage}>Records</button></li>
-            <li><button>Sign Out</button></li>
-          </ul>
-        </div>
+          <div className="buttons">
+            <ul>
+              <li>
+                <button id="homeButton" onClick={() => this.props.history.push('/Cashier/Home')}>
+                  Home
+                </button>
+              </li>
+              <li>
+                <button id="encodeButton" onClick={this.encodePage}>
+                  Encode
+                </button>
+              </li>
+              <li>
+                <button id="recordsButton" onClick={this.recordsPage}>
+                  Records
+                </button>
+              </li>
+              <li>
+                <button id="signoutButton" onClick={() => this.props.history.push('/Login')}>
+                  Sign Out
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     );
   }
 }
 
-export default CMain;
+export default withRouter(CMain);

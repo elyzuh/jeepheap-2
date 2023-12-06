@@ -87,22 +87,6 @@ button:hover{
   
 }
 
-/* 
-.signup{  
-  float:right;
-  font-family: 'League Spartan', Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  justify-content: center;
-  align-items: center;
-  width: 115px;
-  height: 42px;
-  position: absolute;
-  right: 100px;
-  background: #2B2E4A;
-  border-radius: 999px;
-  color: #FFFFFF;
-  border-width: 0px;
-} */
 
 .first-p{
   margin: 30px;
@@ -266,7 +250,7 @@ button:hover{
 .third-left h1{
   font-weight: 500;
   font-size: 4vw;
-  padding-top: 100px;
+  padding-top: 150px;
   padding-left: 60px;
   color: #2B2E4A;
   padding-bottom:20px;
@@ -302,7 +286,8 @@ button:hover{
 .footer-contacts h3 {
   margin: 0;
   padding-top: 30px;
-  width: 45%; /* Adjusted width for more compression */
+  width: 45%;
+  font-weight: 300;
 }
 
 .footer-socials {
@@ -311,6 +296,7 @@ button:hover{
   height: 50px;
   justify-content: center;
   padding: 10px;
+  gap:10px;
 }
 
 hr{

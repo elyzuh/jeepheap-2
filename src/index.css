@@ -192,7 +192,6 @@
   height: auto;
 }
 
-
 button {
   margin: 0;
   padding: 0;
@@ -220,30 +219,22 @@ button {
   background-color: #2DD7AE;
   color: #ffffff;
   border-radius: 50px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
   font-size: x-large;
   font-weight: 600;
 }
 
-.buttons li {
- 
-  transition: box-shadow 0.3s ease, color 0.3s ease;
-}
-
 .buttons li:hover {
-  box-shadow: 0 0 10px #1AE1C4, 0 0 30px #1AE1C4; 
+  background-color: #1AE1C4;
+  box-shadow: 0 0 10px #1AE1C4, 0 0 30px #1AE1C4;
   border-radius: 50px;
-  color: #1AE1C4;
+  color: #ffffff;
 }
 
-
-.buttons li.selected {
-  background-color: #7b61ff;
-  border: 1px solid #2DD7AE;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #1AE1C4;
+.buttons button.selected {
+  color: white;
+  box-shadow: 0 0 10px #1AE1C4, 0 0 30px #1AE1C4;
 }
-
 
 
 @media screen and (max-width: 768px) {
