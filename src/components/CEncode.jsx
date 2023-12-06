@@ -105,6 +105,7 @@ class CEncode extends Component {
           </div>
         </div>
         <div className="outSide">
+          <div className='outSide-1'>
         <div className="buttons">
           <ul>
             <li>
@@ -128,6 +129,28 @@ class CEncode extends Component {
               </button>
             </li>
           </ul>
+        </div>
+        </div>
+        <div className='outSide-2'>
+          <div className='encode-input'>
+          <div className='encode-input-1'>
+                <label>Trip:</label>
+                <input type='text' ></input>
+                <label>Time Arrival:</label>
+                <input type='text' ></input>
+            </div>
+          <div className='encode-input-2'>
+            <label>Body #:</label>
+            <input type='text' ></input>
+            <label>Remitter:</label>
+            <input type='text' ></input>
+          </div>
+          <div className='encode-input-3'>
+            <label>Route #:</label>
+            <input type='text' ></input>
+          </div>
+          </div>
+        
         </div>
         </div>
       </div>

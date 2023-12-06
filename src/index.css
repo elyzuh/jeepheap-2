@@ -188,8 +188,10 @@
 
 .outSide {
   background-color: transparent;
-  width: 100%;
   height: auto;
+  display:flex;
+  margin:50px;
+  padding: 50px;
 }
 
 button {
@@ -256,6 +258,84 @@ button {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.outSide-1 {
+  width: 50%;
+  max-width: 500px; 
+  padding: 50px;
+  margin: 50px;
+  position: fixed;
+  top: 50%; 
+  left: 0; 
+  transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  .outSide-1 {
+    width: 80%; 
+    max-width: none; 
+    margin: 20px;
+  }
+}
+
+
+.outSide-2 {
+  width: 50%;
+  max-width: 800px; 
+  padding: 50px;
+  padding-right: 300px;
+  margin: 50px;
+  position: fixed;
+  top: 50%; 
+  right: 0; 
+  transform: translateY(-50%);
+}
+
+
+@media (max-width: 768px) {
+  .outSide-2 {
+    width: 80%; 
+    max-width: none;
+    margin: 20px;
+  }
+}
+
+.buttons{
+  width:50%;
+}
+
+.encode-input {
+  margin: 50px; 
+  color: white;
+  display: grid;
+  gap: 20px;
+  width:100%;
+}
+
+.encode-input label {
+  font-size: x-large;
+}
+
+.encode-input input {
+  width: 100%;
+  padding: 8px;
+  height: 30px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: none;
+  font-size: x-large;
+}
+
+/* Additional styles for specific input groups */
+.encode-input-1,
+.encode-input-2 {
+  display: flex; /* Display inputs and labels in a column */
+  gap: 20px;
+  /* Add any specific styles for these input groups */
+}
+
+
+
 
 
 

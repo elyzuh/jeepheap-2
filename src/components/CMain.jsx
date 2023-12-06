@@ -88,6 +88,7 @@ class CMain extends Component {
           </div>
         </div>
         <div className="outSide">
+        <div className='outSide-1'>
           <div className="buttons">
             <ul>
               <li>
@@ -111,6 +112,7 @@ class CMain extends Component {
                 </button>
               </li>
             </ul>
+          </div>
           </div>
         </div>
       </div>

@@ -118,6 +118,7 @@ class CRecords extends Component {
           </div>
         </div>
         <div className="outSide">
+        <div className='outSide-1'>
         <div className="buttons">
           <ul>
             <li>
@@ -141,6 +142,7 @@ class CRecords extends Component {
               </button>
             </li>
           </ul>
+        </div>
         </div>
         </div>
       </div>
