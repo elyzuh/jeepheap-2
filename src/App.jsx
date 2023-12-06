@@ -3,6 +3,9 @@ import React, {Component} from 'react';
 import logo from './assets/logo.png';
 import firstright from './assets/firstright.png';
 import secondleft from './assets/secondleft.png';
+import fblogo from './assets/fblogo.png';
+import linkedlogo from './assets/linkedlogo.png';
+import iglogo from './assets/iglogo.png';
 
 class App extends Component{
   constructor(){
@@ -26,7 +29,7 @@ class App extends Component{
         <div className='first-p'>
                 <div className='first-left'>
                     <h1>Your journey, <b>Simplified!</b></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas sed tempus urna et pharetra pharetra massa. Ut eu sem integer vitae justo eget. Senectus et netus et malesuada fames ac turpis. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. </p>
+                    <p>JeepHeap transforms fare remittance for jeepney cooperatives through a digitalized, efficient solution. Our automated database ensures seamless record-keeping, empowering workers for enhanced productivity. Experience a smoother commute with JeepHeap's user-friendly interface, optimizing operations for everyone involved.</p>
                 </div>
                 <div className='first-right'>
                     <img src={firstright}/>
@@ -46,7 +49,7 @@ class App extends Component{
               </div>
               <div className='second-right'>
                     <h1><b>Efficiency</b> at your fingertips.</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas sed tempus urna et pharetra pharetra massa. Ut eu sem integer vitae justo eget. Senectus et netus et malesuada fames ac turpis. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. </p>
+                    <p>We revolutionize the management of fare remittances for jeepney cooperatives. Our innovative solution offers seamless automation and streamlined record-keeping, empowering workers with a user-friendly interface. Enhance productivity effortlessly, ensuring a smoother and more responsive cooperative experience. Discover the future of efficient fare management with JeepHeap.</p>
               </div>
               {/* <div class="custom-shape-divider-top-1698329915">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -65,6 +68,20 @@ class App extends Component{
             <div className='footer'>
                 JeepHeap.
                 <hr></hr>
+                <div className='footer-info'>
+                  <p>CONNECT WITH THE DEVELOPMENT TEAM</p>
+                  <div className='footer-contacts'>
+                    <h3>Email address</h3>
+                    <h3>Nasipit, Talamban, Cebu City</h3>
+                    <div className='footer-socials'>
+                       <img src={fblogo}/>
+                       <img src={linkedlogo}/>
+                       <img src={iglogo}/>
+                    </div>
+                    <h3>Contact Number</h3>
+                    <h3>09123456789</h3>
+                  </div>
+                </div>
             </div>
       </div>
     );

@@ -250,15 +250,16 @@ button:hover{
 
 .third-p{
   width:100%;
-  height:800px;
+  height:600px;
   padding-right: 0px;
   margin-right: 0px;
   display: flex;
 }
 
 .third-left{
-  margin: 30px;
+  margin: 20px;
   width: 100%;
+  padding-top: 30px;
   padding-left: 60px;
 }
 
@@ -270,15 +271,46 @@ button:hover{
   color: #2B2E4A;
   padding-bottom:20px;
 }
-
-.footer{
-  height:200px;
-  background-color: #7B61FF;
+.footer {
+  height: 200px;
+  background: linear-gradient(to right, #7B61FF, #00FFA1);
   color: white;
   font-weight: 600;
   font-size: 30px;
-  padding-left: 150px;
   padding-top: 100px;
+  text-align: center;
+}
+
+.footer hr {
+  border: 0.5px solid white;
+  width: 80%;
+  margin: 10px auto;
+}
+
+.footer-info {
+  padding: 20px;
+  font-size: large;
+  font-weight: 300;
+}
+
+.footer-contacts {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-contacts h3 {
+  margin: 0;
+  padding-top: 30px;
+  width: 45%; /* Adjusted width for more compression */
+}
+
+.footer-socials {
+  display: flex;
+  max-width: 50px;
+  height: 50px;
+  justify-content: center;
+  padding: 10px;
 }
 
 hr{
